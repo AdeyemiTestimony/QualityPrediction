@@ -8,12 +8,17 @@ from skimage import io, color, transform
 
 import pickle
 
-with st.spinner('Application Loading...'):
-    model = tensorflow.keras.models.load_model("best_model.h5")
 
 import streamlit as st
 import time
 
+with st.spinner('Application Loading...'):
+    # Load the model using st.cache
+    @st.cache(allow_output_mutation=True)
+    def load_model():
+        return tensorflow.keras.models.load_model("best_model.h5")
+
+    model = load_model()
 
 
 
