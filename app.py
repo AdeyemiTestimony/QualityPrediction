@@ -85,7 +85,7 @@ if uploaded_image:
 
 
     # Check if the similarity score is above a threshold
-    if similarity_score > 0.7:
+    if similarity_score > 0.6:
         st.success("Your image is relevant!")
 
         from PIL import Image
