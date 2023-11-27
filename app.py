@@ -55,7 +55,6 @@ def compare_images(image1, image2):
 
 
 
-
 # Image display
 if uploaded_image:
     
@@ -81,10 +80,12 @@ if uploaded_image:
 
     # Calculate image similarity score
     similarity_score = compare_images(base_image, test_image)
-    print(similarity_score)
+    #print(similarity_score)
+    print(f"Similarity: {similarity_score}")
+
 
     # Check if the similarity score is above a threshold
-    if similarity_score > 0.5:
+    if similarity_score > 0.7:
         st.success("Your image is relevant!")
 
         from PIL import Image
