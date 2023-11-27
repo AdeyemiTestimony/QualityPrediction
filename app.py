@@ -85,7 +85,7 @@ if uploaded_image:
 
 
     # Check if the similarity score is above a threshold
-    if similarity_score > 0.6:
+    if similarity_score > 0.55:
         st.success("Your image is relevant!")
 
         from PIL import Image
@@ -136,7 +136,7 @@ feedback_text = st.empty()
 
 # Button to trigger feedback generation
 if st.button("Generate Feedback"):
-    if similarity_score > 0.5:
+    if similarity_score > 0.55:
         progress_text1 = "Making Prediction..."
         my_bar2 = st.progress(0, text=progress_text1)
 
