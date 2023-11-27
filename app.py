@@ -135,23 +135,24 @@ feedback_text = st.empty()
 
 # Button to trigger feedback generation
 if st.button("Generate Feedback"):
-    progress_text1 = "Making Prediction..."
-    my_bar2 = st.progress(0, text=progress_text1)
+    if similarity_score > 0.5:
+        progress_text1 = "Making Prediction..."
+        my_bar2 = st.progress(0, text=progress_text1)
 
-    for percent_complete in range(100):
-        time.sleep(0.01)
-        my_bar2.progress(percent_complete + 1, text=progress_text1)
-    time.sleep(1)
-    my_bar2.empty()
-    # Read the ima
+        for percent_complete in range(100):
+            time.sleep(0.01)
+            my_bar2.progress(percent_complete + 1, text=progress_text1)
+        time.sleep(1)
+        my_bar2.empty()
+        # Read the ima
 
-    # Implement your feedback generation logic here
-    if prediction < 0.8:
-        feedback = "This casting is Defective"#generate_feedback(uploaded_image)
-        #feedback_text.write(feedback)
-        st.error(feedback)
-    elif prediction > 0.8 :
-        feedback = "This casting is Ok"#generate_feedback(uploaded_image)
-        #feedback_text.write(feedback)
-        st.success(feedback)
-        
+        # Implement your feedback generation logic here
+        if prediction < 0.8:
+            feedback = "This casting is Defective"#generate_feedback(uploaded_image)
+            #feedback_text.write(feedback)
+            st.error(feedback)
+        elif prediction > 0.8 :
+            feedback = "This casting is Ok"#generate_feedback(uploaded_image)
+            #feedback_text.write(feedback)
+            st.success(feedback)
+ 
