@@ -1,0 +1,7 @@
+streamlit
+numpy
+tensorflow
+scikit-image
+opencv-python
+Pillow
+inotify
