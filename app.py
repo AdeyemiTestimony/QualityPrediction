@@ -17,7 +17,6 @@ import time
 
 
 
-
 # Title and description
 st.title("Casting product Labeler")
 #st.markdown("Upload an image and receive see where your product fits.")
@@ -80,7 +79,7 @@ if uploaded_image:
     print(similarity_score)
 
     # Check if the similarity score is above a threshold
-    if similarity_score > 0.4:
+    if similarity_score > 0.5:
         st.success("Your image is relevant!")
 
         from PIL import Image
