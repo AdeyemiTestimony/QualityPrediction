@@ -39,7 +39,7 @@ from skimage.metrics import structural_similarity
 # Load the base image
 base_image = cv2.imread('test1.jpeg')
 
-# Define the function to calculate image similarity
+#Define the function to calculate image similarity
 def compare_images(image1, image2):
 
     test_image_resized = cv2.resize(test_image, (base_image.shape[1], base_image.shape[0]))
@@ -52,6 +52,12 @@ def compare_images(image1, image2):
     ssim_score = structural_similarity(image1_gray, image2_gray)
 
     return ssim_score
+
+
+
+
+import cv2
+from skimage.metrics import structural_similarity
 
 
 
