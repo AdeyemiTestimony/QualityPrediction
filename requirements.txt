@@ -2,6 +2,7 @@ streamlit
 numpy
 tensorflow
 scikit-image
-opencv-python
+opencv-python-headless
 Pillow
 inotify
+
