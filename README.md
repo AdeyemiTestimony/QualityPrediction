@@ -2,6 +2,8 @@
 
 [LINK TO DEPLOYED PROJECT](https://casting-quality-prediction.streamlit.app/)
 
+[LINK TO NOTEBOOK](https://drive.google.com/drive/folders/1dUP5XCwuTNkevoLUHHQtbCXezQUJ6N_M?usp=sharing)
+
 ## Project Overview
 
 ### Context
@@ -13,7 +15,7 @@ Casting is a crucial manufacturing process involving the pouring of liquid mater
 The primary goal of this project is to automate the inspection process by identifying defects in casting products by developing a deep learning classification model. By leveraging machine learning, we aim to enhance accuracy, reduce manual labor, and mitigate the risk of defective product rejection, ultimately optimizing the manufacturing process.
 
 ### Dataset
-The dataset comprises top-view images of submersible pump impellers, obtained under stable lighting conditions. The dataset includes a total of 7348 grayscale images, each with dimensions of (300*300) pixels. Augmentation has been applied to all images to enrich the training data.
+The dataset obtained from [kaggle](https://www.kaggle.com/datasets/ravirajsinh45/real-life-industrial-dataset-of-casting-product) comprises top-view images of submersible pump impellers, obtained under stable lighting conditions. The dataset includes a total of 7348 grayscale images, each with dimensions of (300*300) pixels. Augmentation has been applied to all images to enrich the training data.
 
 Additionally, a set of images with a size of 512x512 pixels, without augmentation, has been uploaded. This subset contains 519 images labeled as 'defective' and 781 images labeled as 'ok_front.'
 
