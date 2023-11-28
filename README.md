@@ -1,5 +1,7 @@
 # Automatic Inspection of Casting Defects in Casting Products Using Deep Learning
 
+[LINK TO DEPLOYED PROJECT](https://casting-quality-prediction.streamlit.app/)
+
 ## Project Overview
 
 ### Context
