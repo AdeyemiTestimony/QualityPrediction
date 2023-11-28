@@ -34,3 +34,6 @@ Additionally, a set of images with a size of 512x512 pixels, without augmentatio
 Automating the inspection process can potentially eliminate the bottleneck associated with manual inspection, leading to improved accuracy, reduced labor costs, and increased overall efficiency in the manufacturing of casting products.
 
 By leveraging deep learning, this project strives to revolutionize the quality assurance process, ensuring that defects are identified and addressed with precision, ultimately contributing to the overall success of casting manufacturing.
+
+### How to Test
+Click on this [link](https://github.com/AdeyemiTestimony/QualityPrediction/tree/main/archive/casting_data/casting_data/test) to go to the [path](https://github.com/AdeyemiTestimony/QualityPrediction/tree/main/archive/casting_data/casting_data/test) of the images and you can upload images from either `def_front` or `ok_front`
